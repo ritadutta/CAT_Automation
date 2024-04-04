@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "dev" ],
+  "name" : "Environment"
+}, {
+  "values" : [ "linux" ],
+  "name" : "Platform"
+}, {
+  "values" : [ "https://cat-dev.zartico.com/" ],
+  "name" : "URL"
+} ]

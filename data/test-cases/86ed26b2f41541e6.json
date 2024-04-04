@@ -1,0 +1,87 @@
+{
+  "uid" : "86ed26b2f41541e6",
+  "name" : "Verify Profile Page functionality ",
+  "historyId" : "376f62bafa3ab350c74c617b28ba1fdf",
+  "time" : {
+    "start" : 1712233341719,
+    "stop" : 1712233346128,
+    "duration" : 4409
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook for All functionality CAT",
+      "time" : {
+        "start" : 1712233341719,
+        "stop" : 1712233341850,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f453f1277980cd4",
+      "name" : "Console Logs",
+      "source" : "f453f1277980cd4.txt",
+      "type" : "text/plain",
+      "size" : 11625
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "package",
+    "value" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "All functionality CAT"
+  }, {
+    "name" : "feature",
+    "value" : "All functionality CAT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-headless-shell-125.0.6398.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "86ed26b2f41541e6.json",
+  "parameterValues" : [ "chrome-headless-shell-125.0.6398.0" ]
+}

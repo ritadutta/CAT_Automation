@@ -1,0 +1,173 @@
+.........Console Logs.........
+
+2024-04-04T12:30:20.934Z INFO webdriver: COMMAND navigateTo("https://cat-dev.zartico.com/")
+2024-04-04T12:30:20.935Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/url
+2024-04-04T12:30:20.935Z INFO webdriver: DATA { url: 'https://cat-dev.zartico.com/' }
+2024-04-04T12:30:20.999Z INFO webdriver: RESULT null
+2024-04-04T12:30:20.999Z INFO webdriver: COMMAND maximizeWindow()
+2024-04-04T12:30:21.000Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window/maximize
+2024-04-04T12:30:21.070Z INFO webdriver: RESULT { height: 735, width: 1440, x: 0, y: 0 }
+::::::::::Test  Verify Profile Page functionality   Started::::::::::
+2024-04-04T12:30:22.072Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(@class, "css-1yxmbwk")]")
+2024-04-04T12:30:22.073Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.073Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(@class, "css-1yxmbwk")]' }
+2024-04-04T12:30:22.080Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.159'
+}
+2024-04-04T12:30:22.083Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-04T12:30:22.083Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/execute/sync
+2024-04-04T12:30:22.084Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.159',
+      ELEMENT: 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.159'
+    }
+  ]
+}
+2024-04-04T12:30:22.089Z INFO webdriver: RESULT true
+2024-04-04T12:30:22.090Z INFO webdriver: COMMAND findElement("css selector", "#account-button")
+2024-04-04T12:30:22.091Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.091Z INFO webdriver: DATA { using: 'css selector', value: '#account-button' }
+2024-04-04T12:30:22.097Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.160'
+}
+2024-04-04T12:30:22.098Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Help"]/following::*[text()="chevron_right"][2]")
+2024-04-04T12:30:22.098Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-04T12:30:22.099Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/execute/sync
+2024-04-04T12:30:22.099Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.160',
+      ELEMENT: 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.160'
+    }
+  ]
+}
+2024-04-04T12:30:22.100Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.100Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//*[text()="Help"]/following::*[text()="chevron_right"][2]'
+}
+2024-04-04T12:30:22.105Z INFO webdriver: RESULT true
+2024-04-04T12:30:22.112Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.161'
+}
+2024-04-04T12:30:22.114Z INFO webdriver: COMMAND findElement("css selector", ".viewMyAccountLink")
+2024-04-04T12:30:22.114Z INFO webdriver: COMMAND elementClick("f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.161")
+2024-04-04T12:30:22.114Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.115Z INFO webdriver: DATA { using: 'css selector', value: '.viewMyAccountLink' }
+2024-04-04T12:30:22.116Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element/f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.161/click
+2024-04-04T12:30:22.130Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".viewMyAccountLink"}\n' +
+    '  (Session info: chrome-headless-shell=125.0.6398.0)',
+  stacktrace: '#0 0x560b4f1ae3e9 <unknown>\n' +
+    '#1 0x560b4ee9f87c <unknown>\n' +
+    '#2 0x560b4eeeb9f5 <unknown>\n' +
+    '#3 0x560b4eeebab1 <unknown>\n' +
+    '#4 0x560b4ef2fda4 <unknown>\n' +
+    '#5 0x560b4ef0e2cd <unknown>\n' +
+    '#6 0x560b4ef2d153 <unknown>\n' +
+    '#7 0x560b4ef0e043 <unknown>\n' +
+    '#8 0x560b4eede59e <unknown>\n' +
+    '#9 0x560b4eedef0e <unknown>\n' +
+    '#10 0x560b4f172adb <unknown>\n' +
+    '#11 0x560b4f176a1b <unknown>\n' +
+    '#12 0x560b4f15f441 <unknown>\n' +
+    '#13 0x560b4f177582 <unknown>\n' +
+    '#14 0x560b4f143dbf <unknown>\n' +
+    '#15 0x560b4f19d7c8 <unknown>\n' +
+    '#16 0x560b4f19d99c <unknown>\n' +
+    '#17 0x560b4f1ad51f <unknown>\n' +
+    '#18 0x7fd3d6694ac3 <unknown>\n'
+}
+2024-04-04T12:30:22.134Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Go to My Zartico"]")
+2024-04-04T12:30:22.135Z INFO webdriver: COMMAND findElement("css selector", ".viewMyAccountLink")
+2024-04-04T12:30:22.135Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.135Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Go to My Zartico"]' }
+2024-04-04T12:30:22.136Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.136Z INFO webdriver: DATA { using: 'css selector', value: '.viewMyAccountLink' }
+2024-04-04T12:30:22.174Z INFO webdriver: RESULT null
+2024-04-04T12:30:22.181Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162'
+}
+2024-04-04T12:30:22.184Z INFO webdriver: COMMAND findElement("css selector", ".viewMyAccountLink")
+2024-04-04T12:30:22.184Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-04T12:30:22.185Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:22.185Z INFO webdriver: DATA { using: 'css selector', value: '.viewMyAccountLink' }
+2024-04-04T12:30:22.186Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/execute/sync
+2024-04-04T12:30:22.186Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162',
+      ELEMENT: 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162'
+    }
+  ]
+}
+2024-04-04T12:30:22.188Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163'
+}
+2024-04-04T12:30:22.191Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-04T12:30:22.191Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/execute/sync
+2024-04-04T12:30:22.191Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163',
+      ELEMENT: 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163'
+    }
+  ]
+}
+2024-04-04T12:30:22.194Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163'
+}
+2024-04-04T12:30:22.196Z INFO webdriver: COMMAND getWindowHandle()
+2024-04-04T12:30:22.197Z INFO webdriver: COMMAND elementClick("f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163")
+2024-04-04T12:30:22.197Z INFO webdriver: [GET] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window
+2024-04-04T12:30:22.198Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element/f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.163/click
+2024-04-04T12:30:22.200Z INFO webdriver: RESULT true
+2024-04-04T12:30:22.203Z INFO webdriver: RESULT true
+2024-04-04T12:30:22.204Z INFO webdriver: RESULT 79D7B1B88794C008C19D028D7A8A0937
+2024-04-04T12:30:22.204Z INFO webdriver: COMMAND getWindowHandles()
+2024-04-04T12:30:22.205Z INFO webdriver: [GET] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window/handles
+2024-04-04T12:30:22.231Z INFO webdriver: RESULT null
+2024-04-04T12:30:22.848Z INFO webdriver: RESULT [
+  '79D7B1B88794C008C19D028D7A8A0937',
+  '8E1AF3563E31A02B6112CF57E206F65D'
+]
+2024-04-04T12:30:22.848Z INFO webdriver: COMMAND switchToWindow("<Screenshot[base64]>")
+2024-04-04T12:30:22.849Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window
+2024-04-04T12:30:22.849Z INFO webdriver: DATA { handle: '8E1AF3563E31A02B6112CF57E206F65D' }
+2024-04-04T12:30:22.851Z INFO webdriver: RESULT null
+2024-04-04T12:30:22.851Z INFO webdriver: COMMAND getUrl()
+2024-04-04T12:30:22.852Z INFO webdriver: [GET] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/url
+2024-04-04T12:30:25.022Z INFO webdriver: RESULT https://my.zartico.com/learn/my-profile
+URL of the new tab: https://my.zartico.com/learn/my-profile
+2024-04-04T12:30:25.022Z INFO webdriver: COMMAND closeWindow()
+2024-04-04T12:30:25.023Z INFO webdriver: [DELETE] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window
+2024-04-04T12:30:25.026Z INFO webdriver: RESULT [ '79D7B1B88794C008C19D028D7A8A0937' ]
+2024-04-04T12:30:25.027Z INFO webdriver: COMMAND switchToWindow("<Screenshot[base64]>")
+2024-04-04T12:30:25.028Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/window
+2024-04-04T12:30:25.028Z INFO webdriver: DATA { handle: '79D7B1B88794C008C19D028D7A8A0937' }
+2024-04-04T12:30:25.030Z INFO webdriver: RESULT null
+2024-04-04T12:30:25.030Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Go to My Zartico"]")
+2024-04-04T12:30:25.030Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element
+2024-04-04T12:30:25.030Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Go to My Zartico"]' }
+2024-04-04T12:30:25.037Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162'
+}
+2024-04-04T12:30:25.039Z INFO webdriver: COMMAND getUrl()
+2024-04-04T12:30:25.040Z INFO webdriver: COMMAND elementClick("f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162")
+2024-04-04T12:30:25.040Z INFO webdriver: [GET] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/url
+2024-04-04T12:30:25.041Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/element/f.79D7B1B88794C008C19D028D7A8A0937.d.65F45207BAE79B86DF530C3989E682CE.e.162/click
+2024-04-04T12:30:25.044Z INFO webdriver: RESULT https://cat-dev.zartico.com/
+URL of the current tab: https://cat-dev.zartico.com/
+2024-04-04T12:30:25.044Z INFO webdriver: COMMAND back()
+2024-04-04T12:30:25.045Z INFO webdriver: [POST] http://0.0.0.0:36769/session/55c08e0f05ae98b01d3f9cedc21ee95e/back
+2024-04-04T12:30:26.434Z INFO webdriver: RESULT null
+2024-04-04T12:30:26.529Z INFO webdriver: RESULT null
+::::::::::Test  Verify Profile Page functionality   Passed::::::::::
+
+

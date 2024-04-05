@@ -4,13 +4,13 @@
     "name" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts",
     "children" : [ {
       "name" : "Verify Signin functionality ",
-      "uid" : "3a25d4d6a680f114",
+      "uid" : "c3e7817ad32400d",
       "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
       "status" : "passed",
       "time" : {
-        "start" : 1712233803584,
-        "stop" : 1712233810347,
-        "duration" : 6763
+        "start" : 1712319232078,
+        "stop" : 1712319239580,
+        "duration" : 7502
       },
       "flaky" : false,
       "newFailed" : false,
@@ -18,16 +18,16 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6398.0" ]
+      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
     }, {
       "name" : "Verify Homepage and HelpPage functionality ",
-      "uid" : "cd1bbf7dc8d6d0bb",
+      "uid" : "aa833452a8c0b664",
       "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
       "status" : "passed",
       "time" : {
-        "start" : 1712233812350,
-        "stop" : 1712233818930,
-        "duration" : 6580
+        "start" : 1712319241584,
+        "stop" : 1712319247853,
+        "duration" : 6269
       },
       "flaky" : false,
       "newFailed" : false,
@@ -35,16 +35,16 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6398.0" ]
+      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
     }, {
       "name" : "Verify Profile Page functionality ",
-      "uid" : "37a69fcbf7cee9bb",
+      "uid" : "7fa10f15451eea64",
       "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
       "status" : "passed",
       "time" : {
-        "start" : 1712233820934,
-        "stop" : 1712233826530,
-        "duration" : 5596
+        "start" : 1712319249856,
+        "stop" : 1712319255441,
+        "duration" : 5585
       },
       "flaky" : false,
       "newFailed" : false,
@@ -52,16 +52,16 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6398.0" ]
+      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
     }, {
       "name" : "Verify Signout functionality ",
-      "uid" : "a58928d76f14c0b6",
+      "uid" : "eb5fac66deedf8f9",
       "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
       "status" : "passed",
       "time" : {
-        "start" : 1712233828531,
-        "stop" : 1712233842827,
-        "duration" : 14296
+        "start" : 1712319257442,
+        "stop" : 1712319271747,
+        "duration" : 14305
       },
       "flaky" : false,
       "newFailed" : false,
@@ -69,7 +69,7 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6398.0" ]
+      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
     } ],
     "uid" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts"
   } ],

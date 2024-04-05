@@ -1,0 +1,370 @@
+.........Console Logs.........
+
+2024-04-05T12:14:01.584Z INFO webdriver: COMMAND navigateTo("https://cat-dev.zartico.com/")
+2024-04-05T12:14:01.584Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/url
+2024-04-05T12:14:01.584Z INFO webdriver: DATA { url: 'https://cat-dev.zartico.com/' }
+2024-04-05T12:14:01.631Z INFO webdriver: RESULT null
+2024-04-05T12:14:01.631Z INFO webdriver: COMMAND maximizeWindow()
+2024-04-05T12:14:01.632Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window/maximize
+2024-04-05T12:14:01.718Z INFO webdriver: RESULT { height: 735, width: 1440, x: 0, y: 0 }
+::::::::::Test  Verify Homepage and HelpPage functionality   Started::::::::::
+2024-04-05T12:14:02.720Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(@class, "css-1yxmbwk")]")
+2024-04-05T12:14:02.720Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:02.720Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(@class, "css-1yxmbwk")]' }
+2024-04-05T12:14:02.727Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+}
+2024-04-05T12:14:02.729Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:02.729Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:02.729Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+    }
+  ]
+}
+2024-04-05T12:14:02.735Z INFO webdriver: RESULT true
+2024-04-05T12:14:02.735Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Hamburger Icon is displayed")
+[PASS]: Hamburger Icon is displayed
+2024-04-05T12:14:02.735Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:02.735Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(@class, "css-1yxmbwk")]")
+2024-04-05T12:14:02.735Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:02.735Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(@class, "css-1yxmbwk")]' }
+2024-04-05T12:14:02.743Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+}
+2024-04-05T12:14:02.745Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:02.745Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:02.745Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+    }
+  ]
+}
+2024-04-05T12:14:02.750Z INFO webdriver: RESULT true
+2024-04-05T12:14:02.750Z INFO webdriver: COMMAND elementClick("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103")
+2024-04-05T12:14:02.750Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103/click
+2024-04-05T12:14:02.798Z INFO webdriver: RESULT null
+2024-04-05T12:14:02.798Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Hamburger Icon is clicked")
+[PASS]: Hamburger Icon is clicked
+2024-04-05T12:14:02.798Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:02.798Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@title, "Home")]")
+2024-04-05T12:14:02.799Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:02.799Z INFO webdriver: DATA { using: 'xpath', value: '//*[contains(@title, "Home")]' }
+2024-04-05T12:14:02.811Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.104'
+}
+2024-04-05T12:14:02.813Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:02.813Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:02.813Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.104',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.104'
+    }
+  ]
+}
+2024-04-05T12:14:02.820Z INFO webdriver: RESULT true
+2024-04-05T12:14:02.820Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Haome Icon is displayed")
+[PASS]: Haome Icon is displayed
+2024-04-05T12:14:02.820Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:02.821Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Home"]")
+2024-04-05T12:14:02.821Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:02.821Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Home"]' }
+2024-04-05T12:14:02.830Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.115'
+}
+2024-04-05T12:14:02.833Z INFO webdriver: COMMAND getElementText("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.115")
+2024-04-05T12:14:02.834Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.115/text
+2024-04-05T12:14:02.843Z INFO webdriver: RESULT Home
+2024-04-05T12:14:02.843Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Title >> "Home" equal to "Home" are matched")
+[PASS]: Title >> "Home" equal to "Home" are matched
+2024-04-05T12:14:02.843Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:04.845Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@class, "help-text css-1tsvksn")]")
+2024-04-05T12:14:04.846Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:04.846Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//*[contains(@class, "help-text css-1tsvksn")]'
+}
+2024-04-05T12:14:04.857Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+}
+2024-04-05T12:14:04.859Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:04.859Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:04.859Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+    }
+  ]
+}
+2024-04-05T12:14:04.865Z INFO webdriver: RESULT true
+2024-04-05T12:14:04.865Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Help Icon is displayed")
+[PASS]: Help Icon is displayed
+2024-04-05T12:14:04.865Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:04.865Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Help"]")
+2024-04-05T12:14:04.866Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:04.866Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Help"]' }
+2024-04-05T12:14:04.874Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.119'
+}
+2024-04-05T12:14:04.876Z INFO webdriver: COMMAND getElementText("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.119")
+2024-04-05T12:14:04.876Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.119/text
+2024-04-05T12:14:04.882Z INFO webdriver: RESULT Help
+2024-04-05T12:14:04.883Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Title >> "Help" equal to "Help" are matched")
+[PASS]: Title >> "Help" equal to "Help" are matched
+2024-04-05T12:14:04.883Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:04.883Z INFO webdriver: COMMAND findElement("css selector", "#account-button")
+2024-04-05T12:14:04.883Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:04.883Z INFO webdriver: DATA { using: 'css selector', value: '#account-button' }
+2024-04-05T12:14:04.891Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.120'
+}
+2024-04-05T12:14:04.894Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:04.894Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:04.894Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.120',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.120'
+    }
+  ]
+}
+2024-04-05T12:14:04.900Z INFO webdriver: RESULT true
+2024-04-05T12:14:04.900Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Profile Icon is displayed")
+[PASS]: Profile Icon is displayed
+2024-04-05T12:14:04.901Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:04.901Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@class, "filterButton css-1cuyamw")]")
+2024-04-05T12:14:04.901Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:04.901Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//*[contains(@class, "filterButton css-1cuyamw")]'
+}
+2024-04-05T12:14:04.910Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.111'
+}
+2024-04-05T12:14:04.912Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:04.912Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:04.912Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.111',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.111'
+    }
+  ]
+}
+2024-04-05T12:14:04.917Z INFO webdriver: RESULT true
+2024-04-05T12:14:04.918Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Filter option is displayed")
+[PASS]: Filter option is displayed
+2024-04-05T12:14:04.918Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:04.918Z INFO webdriver: COMMAND findElement("xpath", "//div[@class="header"]/child::div/child::h1")
+2024-04-05T12:14:04.918Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:04.918Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//div[@class="header"]/child::div/child::h1'
+}
+2024-04-05T12:14:04.924Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.121'
+}
+2024-04-05T12:14:04.925Z INFO webdriver: COMMAND getElementText("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.121")
+2024-04-05T12:14:04.926Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.121/text
+2024-04-05T12:14:04.932Z INFO webdriver: RESULT Convention Reports
+2024-04-05T12:14:04.932Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Title >> "Convention Reports" equal to "Convention Reports" are matched")
+[PASS]: Title >> "Convention Reports" equal to "Convention Reports" are matched
+2024-04-05T12:14:04.932Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:05.934Z INFO webdriver: COMMAND findElement("xpath", "//button[contains(@class, "css-1yxmbwk")]")
+2024-04-05T12:14:05.934Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:05.934Z INFO webdriver: DATA { using: 'xpath', value: '//button[contains(@class, "css-1yxmbwk")]' }
+2024-04-05T12:14:05.941Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+}
+2024-04-05T12:14:05.945Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:05.945Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:05.945Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.103'
+    }
+  ]
+}
+2024-04-05T12:14:05.951Z INFO webdriver: RESULT true
+2024-04-05T12:14:05.951Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Hamburger Icon is displayed")
+[PASS]: Hamburger Icon is displayed
+2024-04-05T12:14:05.952Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:05.952Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@class, "help-text css-1tsvksn")]")
+2024-04-05T12:14:05.952Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:05.952Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//*[contains(@class, "help-text css-1tsvksn")]'
+}
+2024-04-05T12:14:05.958Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+}
+2024-04-05T12:14:05.960Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:05.961Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:05.961Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+    }
+  ]
+}
+2024-04-05T12:14:05.965Z INFO webdriver: RESULT true
+2024-04-05T12:14:05.965Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Help Button is displayed")
+[PASS]: Help Button is displayed
+2024-04-05T12:14:05.965Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:05.965Z INFO webdriver: COMMAND findElement("xpath", "//*[contains(@class, "help-text css-1tsvksn")]")
+2024-04-05T12:14:05.966Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:05.966Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: '//*[contains(@class, "help-text css-1tsvksn")]'
+}
+2024-04-05T12:14:05.971Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+}
+2024-04-05T12:14:05.973Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:05.974Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:05.974Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118'
+    }
+  ]
+}
+2024-04-05T12:14:05.978Z INFO webdriver: RESULT true
+2024-04-05T12:14:05.978Z INFO webdriver: COMMAND elementClick("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118")
+2024-04-05T12:14:05.979Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.118/click
+2024-04-05T12:14:06.023Z INFO webdriver: RESULT null
+2024-04-05T12:14:06.023Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Sign In button is clicked")
+[PASS]: Sign In button is clicked
+2024-04-05T12:14:06.023Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:06.024Z INFO webdriver: COMMAND findElement("xpath", "//*[@class="helpLink"]")
+2024-04-05T12:14:06.024Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:06.025Z INFO webdriver: DATA { using: 'xpath', value: '//*[@class="helpLink"]' }
+2024-04-05T12:14:06.034Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123'
+}
+2024-04-05T12:14:06.038Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:06.038Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:06.038Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123'
+    }
+  ]
+}
+2024-04-05T12:14:06.044Z INFO webdriver: RESULT true
+2024-04-05T12:14:06.044Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Submit ticket hyperlink is displayed")
+[PASS]: Submit ticket hyperlink is displayed
+2024-04-05T12:14:06.045Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:06.045Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Access Help Resources"]")
+2024-04-05T12:14:06.045Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:06.045Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Access Help Resources"]' }
+2024-04-05T12:14:06.055Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.124'
+}
+2024-04-05T12:14:06.057Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:06.057Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:06.057Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.124',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.124'
+    }
+  ]
+}
+2024-04-05T12:14:06.062Z INFO webdriver: RESULT true
+2024-04-05T12:14:06.062Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Access Hlp Rsource hyperlink is displayed")
+[PASS]: Access Hlp Rsource hyperlink is displayed
+2024-04-05T12:14:06.062Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:06.063Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Provide Feedback"]")
+2024-04-05T12:14:06.063Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:06.063Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Provide Feedback"]' }
+2024-04-05T12:14:06.075Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.125'
+}
+2024-04-05T12:14:06.077Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:06.077Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:06.077Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.125',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.125'
+    }
+  ]
+}
+2024-04-05T12:14:06.083Z INFO webdriver: RESULT true
+2024-04-05T12:14:06.083Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Provide feedback hyperlink is displayed")
+[PASS]: Provide feedback hyperlink is displayed
+2024-04-05T12:14:06.083Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:06.083Z INFO webdriver: COMMAND findElement("xpath", "//*[@class="helpLink"]")
+2024-04-05T12:14:06.083Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element
+2024-04-05T12:14:06.084Z INFO webdriver: DATA { using: 'xpath', value: '//*[@class="helpLink"]' }
+2024-04-05T12:14:06.090Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123'
+}
+2024-04-05T12:14:06.092Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-04-05T12:14:06.092Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/execute/sync
+2024-04-05T12:14:06.092Z INFO webdriver: DATA {
+  script: 'isElementDisplayed(...) [8489 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123',
+      ELEMENT: 'f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123'
+    }
+  ]
+}
+2024-04-05T12:14:06.098Z INFO webdriver: RESULT true
+2024-04-05T12:14:06.098Z INFO webdriver: COMMAND elementClick("f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123")
+2024-04-05T12:14:06.098Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/element/f.3C3D0E0175BE5E806B7704EF04EF5C3D.d.4E1ECA6C9A01F9A58924CFEB6737A98A.e.123/click
+2024-04-05T12:14:06.135Z INFO webdriver: RESULT null
+2024-04-05T12:14:06.135Z INFO webdriver: COMMAND logUtil("<Screenshot[base64]>", "Submit Ticket hyperlink is clicked")
+[PASS]: Submit Ticket hyperlink is clicked
+2024-04-05T12:14:06.135Z INFO webdriver: RESULT undefined
+2024-04-05T12:14:06.135Z INFO webdriver: COMMAND getWindowHandle()
+2024-04-05T12:14:06.135Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window
+2024-04-05T12:14:06.137Z INFO webdriver: RESULT 3C3D0E0175BE5E806B7704EF04EF5C3D
+2024-04-05T12:14:06.137Z INFO webdriver: COMMAND getWindowHandles()
+2024-04-05T12:14:06.138Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window/handles
+2024-04-05T12:14:06.541Z INFO webdriver: RESULT [
+  '3C3D0E0175BE5E806B7704EF04EF5C3D',
+  'DDF380A661BD8A3CBC10EC5FD383D01D'
+]
+2024-04-05T12:14:06.542Z INFO webdriver: COMMAND switchToWindow("<Screenshot[base64]>")
+2024-04-05T12:14:06.542Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window
+2024-04-05T12:14:06.542Z INFO webdriver: DATA { handle: 'DDF380A661BD8A3CBC10EC5FD383D01D' }
+2024-04-05T12:14:06.544Z INFO webdriver: RESULT null
+2024-04-05T12:14:06.544Z INFO webdriver: COMMAND getUrl()
+2024-04-05T12:14:06.545Z INFO webdriver: [GET] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/url
+2024-04-05T12:14:07.844Z INFO webdriver: RESULT https://support.zartico.com/the-zartico-way/support
+URL of the support tab: https://support.zartico.com/the-zartico-way/support
+2024-04-05T12:14:07.845Z INFO webdriver: COMMAND closeWindow()
+2024-04-05T12:14:07.845Z INFO webdriver: [DELETE] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window
+2024-04-05T12:14:07.850Z INFO webdriver: RESULT [ '3C3D0E0175BE5E806B7704EF04EF5C3D' ]
+2024-04-05T12:14:07.850Z INFO webdriver: COMMAND switchToWindow("<Screenshot[base64]>")
+2024-04-05T12:14:07.850Z INFO webdriver: [POST] http://0.0.0.0:40721/session/92c766e7434a4b31ecc5703fb47f2958/window
+2024-04-05T12:14:07.850Z INFO webdriver: DATA { handle: '3C3D0E0175BE5E806B7704EF04EF5C3D' }
+2024-04-05T12:14:07.852Z INFO webdriver: RESULT null
+::::::::::Test  Verify Homepage and HelpPage functionality   Passed::::::::::
+
+

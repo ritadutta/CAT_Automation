@@ -1,0 +1,162 @@
+{
+  "uid" : "c3e7817ad32400d",
+  "name" : "Verify Signin functionality ",
+  "historyId" : "3fcf4f2a4a033e1b9ce4ceb739baf2e1",
+  "time" : {
+    "start" : 1712319232078,
+    "stop" : 1712319239580,
+    "duration" : 7502
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook for All functionality CAT",
+      "time" : {
+        "start" : 1712319232079,
+        "stop" : 1712319233279,
+        "duration" : 1200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign In Button is displayed",
+      "time" : {
+        "start" : 1712319233308,
+        "stop" : 1712319233309,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Side Nav Icon is displayed",
+      "time" : {
+        "start" : 1712319233332,
+        "stop" : 1712319233332,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Sign In button is clicked",
+      "time" : {
+        "start" : 1712319233401,
+        "stop" : 1712319233401,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Zartico Sign In Button is clicked",
+      "time" : {
+        "start" : 1712319235550,
+        "stop" : 1712319235550,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Title >> \"Convention Reports\" equal to \"Convention Reports\" are matched",
+      "time" : {
+        "start" : 1712319238578,
+        "stop" : 1712319238578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9498a1e6b3cb2753",
+      "name" : "Console Logs",
+      "source" : "9498a1e6b3cb2753.txt",
+      "type" : "text/plain",
+      "size" : 14974
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "package",
+    "value" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "All functionality CAT"
+  }, {
+    "name" : "feature",
+    "value" : "All functionality CAT"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-headless-shell-125.0.6400.0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3e7817ad32400d.json",
+  "parameterValues" : [ "chrome-headless-shell-125.0.6400.0" ]
+}

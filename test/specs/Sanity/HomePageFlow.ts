@@ -11,9 +11,9 @@ describe('Login User Flow', () => {
 
      it('Verify the homepage functionality', async () => {
       await LoginPage.loginPage();
-     await browser.pause(1000);
-     await HomePage.homePage();
-    await browser.pause(2000);
+      await browser.pause(1000);
+      await HomePage.homePage();
+      await browser.pause(2000);
     });
 
      

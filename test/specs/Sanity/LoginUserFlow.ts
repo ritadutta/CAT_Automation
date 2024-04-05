@@ -7,13 +7,9 @@ describe('Login User Flow', () => {
         await browser.maximizeWindow();
     });
 
-     it('Verify user is able to login through cookies baaner', async () => {
+     it('Verify user is able to login', async () => {
      await LoginPage.loginPage();
-    //  await LoginPage.getAccessToken();
-    //  console.log("Access token is",await LoginPage.getAccessToken());
-    });
-
-   
+    });   
      
     afterEach(async () => {
             await browser.pause(2000)

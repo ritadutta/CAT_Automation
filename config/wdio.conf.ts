@@ -3,6 +3,8 @@ import AllureReporter from "@wdio/allure-reporter"; // Adjust the import stateme
 import { } from "@wdio/allure-reporter/build/types"; // Adjust this import based on your AllureReporter version
 //import { Test } from "mocha";
 //const process = require('process')
+import { expect as expectChai } from 'chai'
+import { expect as expectWDIO } from '@wdio/globals'
 import {ChainablePromiseElement} from "webdriverio"
 const allure = require("allure-commandline");
 const url = require("../test/testdata/urls");
@@ -245,238 +247,76 @@ export const config: Options.Testrunner = {
    */
 
   before: async function (capabilities, specs) {
-    // await browser.addCommand(
-    //   "mobileScrollDirectionWise",
-    //   async (direction: string) => {
-    //     switch (direction.toUpperCase()) {
-    //       case "UP": {
-    //         const { width, height } = await driver.getWindowSize();
-    //         await driver.touchAction([
-    //           { action: "longPress", x: width / 2, y: height * 0.8 }, //2/5.5
-    //           { action: "moveTo", x: width / 2, y: height * 0.2 }, //2/1.5
-    //           "release",
-    //         ]);
-    //         await driver.logUtil("INFO", "Swiping " + direction + " direction");
-    //         break;
-    //       }
-
-    //       case "DOWN": {
-    //         const { width, height } = await driver.getWindowSize();
-    //         await driver.touchAction([
-    //           { action: "longPress", x: width / 2, y: height * 0.2 }, //2/5.5
-    //           { action: "moveTo", x: width / 2, y: height * 0.8 }, //2/1.5
-    //           "release",
-    //         ]);
-    //         await driver.logUtil("INFO", "Swiping " + direction + " direction");
-    //         break;
-    //       }
-
-    //       case "RIGHT": {
-    //         const { width, height } = await driver.getWindowSize();
-    //         await driver.touchAction([
-    //           { action: "longPress", x: width * 0.2, y: height / 2 }, //2/5.5
-    //           { action: "moveTo", x: width * 0.8, y: height / 2 }, //2/1.5
-    //           "release",
-    //         ]);
-    //         await driver.logUtil("INFO", "Swiping " + direction + " direction");
-    //         break;
-    //       }
-
-    //       case "LEFT": {
-    //         const { width, height } = await driver.getWindowSize();
-    //         await driver.touchAction([
-    //           { action: "longPress", x: width * 0.8, y: height / 2 }, //2/5.5
-    //           { action: "moveTo", x: width * 0.2, y: height / 2 }, //2/1.5
-    //           "release",
-    //         ]);
-    //         await driver.logUtil("INFO", "Swiping " + direction + " direction");
-    //         break;
-    //       }
-    //     }
-    //   }
-    // );
-
-    // await browser.addCommand(
-    //   "isDisplayedGeneric",
-    //   async function (nameOfTheElement) {
-    //     if (await this.isDisplayed()) {
-    //       await driver.logUtil("PASS", nameOfTheElement + " is displayed");
-    //     } else {
-    //       await driver.logUtil("FAIL", nameOfTheElement + " is not displayed");
-    //     }
-    //   },
-    //   true
-    // );
-
-    // await browser.addCommand(
-    //   "swipeUntilElemetDisplayed",
-    //   async function (direction: string) {
-    //     let display = false;
-    //     const time = Date.now();
-    //     while (!display && Date.now() < time + 25000) {
-    //       if (await this.isDisplayed()) {
-    //         display = true;
-    //         await driver.logUtil("INFO", "Element is displayed");
-    //         break;
-    //       } else {
-    //         await driver.mobileScrollDirectionWise(direction);
-    //         await driver.logUtil("INFO","Elements is not displayed swiping " + direction + " direction");
-    //       }
-    //     }
-    //   },
-    //   true
-    // );
-   
-    // // await browser.addCommand(
-    // //   "verifyElementPresentThenClick",
-    // //   async function (elem:ChainablePromiseElement<Promise<WebdriverIO.Element>>, validationText) {
-    // //     if (await elem.isDisplayed()) {
-    // //         await elem.click();
-    // //       driver.logUtil("PASS", validationText + " is displayed and clicked");
-    // //     } else {
-    // //       driver.logUtil("FAIL", expect(false).to.be.an(takeScreenshot(validationText),validationText+ " is not displayed to click "));
-    // //     }   
-    // //   }
-    // // );
-
-    // await browser.addCommand(
-    //   "genericGetText", async function() {
-    //     if(await this.isDisplayed()){
-    //       const text=await this.getText()
-    //       await  driver.logUtil("INFO","Fetched the text : "+text)
-    //     }else{
-    //       await driver.logUtil("FAIL", "Element not displayed to fetch text")
-    //     }  
-    //   },
-    //   true
-    // )
-
-
-  //   async genericGetText(element : Promise<WebdriverIO.Element>){
-  //     if((await element).isDisplayed){
-  //      const text=await (await element).getText();
-  //          driver.logUtil("INFO","Fetched the text : "+text)
-  //      }else{
-  //          driver.logUtil("FAIL", "Element not displayed to fetch text")
-  //      }  
-  //  }
-
-   
-    // await browser.addCommand(
-    //   "verifyElementPresentThenClick",
-    //   async function (validationText) {
-    //     if (await this.isDisplayed()) {
-    //       await this.click();
-    //      // expect((this.isDisplayed).to.expect(true))
-    //      await driver.logUtil("PASS", validationText + " is displayed and clicked");
-    //     } else {    
-    //      await driver.logUtil("FAIL",validationText + " is not displyed to click");
-    //     }
-    //   },
-    //   true
-    // );
-
-  //   await browser.addCommand(
-  //     "genericClick",
-  //     async function (validationText) {
-  //       if (await this.waitForDisplayed()) {
-  //         await this.click();
-  //         await driver.logUtil("PASS", "Clicked on " + validationText);
-  //       } else {
-  //         await driver.logUtil("FAIL", "Failed to click on " + validationText);
-  //       }
-  //     },
-  //     true
-  //   );
-
-  //   await browser.addCommand(
-  //     "genericSetvalue",
-  //     async function (inputString, fieldName) {
-  //       if (await this.isDisplayed()) {
-  //         await this.click();
-  //         await this.setValue(inputString, fieldName);
-  //         await driver.logUtil("PASS","Entered the value " + '"'+inputString+'"' + " into " + fieldName );
-  //       } else {
-  //         await driver.logUtil("FAIL","Failed to enter the value " + '"' +inputString+'"' + " into " + fieldName);
-  //       }
-  //     },
-  //     true
-  //   );
-
-  //   function severityOfTC(severityLevel: string) {
-  //     AllureReporter.addSeverity(severityLevel);
-  //   }
-
-  //   await browser.addCommand(
-  //     "logUtil",
-  //     async (status: string, message: string) => {
-  //       switch (status.toUpperCase()) {
-  //         case "FAIL": {
-  //           console.log(`[FAIL]: ${message}`)
-  //           // await AllureReporter.addStep(message, status+" failed");
-  //           await  AllureReporter.addStep(`${status}: ${message}`, status);
-  //           await takeScreenshot(message);  
-  //           throw new Error(`Failed due to: ${message}`);
-  //           break;
-  //         }
-
-  //         case "PASS": {
-  //           console.log(`[PASS]: ${message}`);
-  //           await AllureReporter.addStep(message, { status: "passed" });
-  //           //takeScreenshot(message);
-  //           break;
-  //         }
-
-  //         case "INFO": {
-  //           console.log(`[INFO]: ${message}`);
-  //           await AllureReporter.addStep(message);
-  //           break;
-  //         }
-
-  //         case "SKIP": {
-  //           console.log(`[SKIP]: ${message}`);
-  //           await AllureReporter.addStep(message, { status: "skipped" });
-  //           break;
-  //         }
-
-  //         case "ERROR": {
-  //           console.error(`[ERROR]: ${message}`);
-  //           await AllureReporter.addStep(message, { status: "broken" });
-  //           await takeScreenshot(message);
-  //           break;
-  //         }
-
-  //         case "WARNING": {
-  //           console.warn(`[WARNING]: ${message}`);
-  //           await AllureReporter.addStep(message, { status: "broken" });
-  //           await takeScreenshot(message);
-  //           break;
-  //         }
-
-  //         case "DEBUG": {
-  //           console.debug(`[DEBUG]: ${message}`);
-  //           await AllureReporter.addStep(message, { status: "skipped" });
-  //           break;
-  //         }
-
-  //         default: {
-  //           console.log(`Case not implemented for: ${status}`);
-  //           break;
-  //         }
-  //       }
-  //     }
-  //     //true
-  //   );
-
-  //   async function takeScreenshot(screenshotName: string): Promise<void> {
-  //     // Use try-catch to handle any potential errors
-  //     try {
-  //       const screenshot = await browser.takeScreenshot();
-  //       AllureReporter.addAttachment(screenshotName,Buffer.from(screenshot, "base64"),"");
-  //     } catch (error) {
-  //       console.error(`Failed to take and add screenshot: ${error}`);
-  //     }
-  //   }
+    await browser.addCommand(
+      "logUtil",
+      async (status: string, message: string) => {
+        switch (status.toUpperCase()) {
+          case "FAIL": {
+            console.log(`[FAIL]: ${message}`)
+            // await AllureReporter.addStep(message, status+" failed");
+            await  AllureReporter.addStep(`${status}: ${message}`, status);
+            await takeScreenshot(message);  
+            throw new Error(`Failed due to: ${await expectChai(message).to.equal(true)}`);
+            break;
+          }
+ 
+          case "PASS": {
+            console.log(`[PASS]: ${message}`);
+            await AllureReporter.addStep(message, { status: "passed" });
+            //takeScreenshot(message);
+            break;
+          }
+ 
+          case "INFO": {
+            console.log(`[INFO]: ${message}`);
+            await AllureReporter.addStep(message);
+            break;
+          }
+ 
+          case "SKIP": {
+            console.log(`[SKIP]: ${message}`);
+            await AllureReporter.addStep(message, { status: "skipped" });
+            break;
+          }
+ 
+          case "ERROR": {
+            console.error(`[ERROR]: ${message}`);
+            await AllureReporter.addStep(message, { status: "broken" });
+            await takeScreenshot(message);
+            break;
+          }
+ 
+          case "WARNING": {
+            console.warn(`[WARNING]: ${message}`);
+            await AllureReporter.addStep(message, { status: "broken" });
+            await takeScreenshot(message);
+            break;
+          }
+ 
+          case "DEBUG": {
+            console.debug(`[DEBUG]: ${message}`);
+            await AllureReporter.addStep(message, { status: "skipped" });
+            break;
+          }
+ 
+          default: {
+            console.log(`Case not implemented for: ${status}`);
+            break;
+          }
+        }
+      }
+      //true
+    );
+ 
+    async function takeScreenshot(screenshotName: string): Promise<void> {
+      // Use try-catch to handle any potential errors
+      try {
+        const screenshot = await browser.takeScreenshot();
+        AllureReporter.addAttachment(screenshotName,Buffer.from(screenshot, "base64"),"");
+      } catch (error) {
+        console.error(`Failed to take and add screenshot: ${error}`);
+      }
+    }
    },
 
   /**

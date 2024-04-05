@@ -42,7 +42,9 @@ class HomePage {
     return $('//*[contains(@alt, "City and Bar Chart")]');
   }
 
-  
+  public get title(){
+    return $('//div[@class="header"]/child::div/child::h1');
+  }
   /****************************************
      * User is able to login successfully through cookies banner using valid credentials
      * @param username
@@ -52,29 +54,19 @@ class HomePage {
      */
   public async homePage() {
     await browser.pause(1000);
-    await (await this.getSideNavIcon).isDisplayed();
-    await (await this.getSideNavIcon).click();
-    await (await this.homeIcon).isDisplayed();
+    await Utils.isDisplayedGeneric(this.getSideNavIcon,"Hamburger Icon");
+    await Utils.genericClick(this.getSideNavIcon,"Hamburger Icon");
+    await Utils.isDisplayedGeneric(this.homeIcon,"Haome Icon");
     const homeText= await (await $('//*[text()="Home"]')).getText();
-    expect(homeText).toEqual("Home");
-    await (await this.signOutIcon).isDisplayed();
-    // const signOutText = (await $('//*[text()="Sign Out"]')).getText();
-    // expect(signOutText).toEqual("Sign Out");
+    await Utils.toEqualAssertionTitle(homeText,"Home");
     await browser.pause(2000);
-    await (await this.helpIcon).isDisplayed();
-    // const helpText = (await $('//*[text()="Help"]')).getText();
-    // console.log("Help text",await helpText);
-    // await browser.pause(2000);
-    // expect(helpText).toEqual("Help");
-    await (await this.profileIcon).isDisplayed();
-    await (await this.filterIcon).isDisplayed();
-    //await (await this.rowsPerPageDropDownIcon).click();
-    await (await this.imageBarChart).isDisplayed();
-    // const heading = await $('//*[text()="Convention Reports"]');
-    // console.log("heading text",await heading);
-    // await browser.pause(2000);
-    // expect(heading).toEqual("Convention Reports");
-    
+    await Utils.isDisplayedGeneric(this.helpIcon,"Help Icon");
+    const helpText = await (await $('//*[text()="Help"]')).getText();
+    await Utils.toEqualAssertionTitle(helpText,"Help");
+    await Utils.isDisplayedGeneric(this.profileIcon,"Profile Icon");
+    await Utils.isDisplayedGeneric(this.filterIcon,"Filter option");
+    const title= await (await this.title).getText();
+    await Utils.toEqualAssertionTitle(title,"Convention Reports");
   }
 
   

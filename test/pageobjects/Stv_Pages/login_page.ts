@@ -30,6 +30,23 @@ class LoginPage {
     return $('//*[@aria-label="Select to get a push notification to the Okta Verify app."]');
   }
 
+  public get title(){
+    return $('//div[@class="header"]/child::div/child::h1');
+  }
+
+  public get errorForInvalidCred(){
+    return $('//*[@class="okta-form-infobox-error infobox infobox-error"]/child::p');
+  }
+
+  public get errorForEmptyEmail(){
+    return $('//*[contains(@class,"o-form-input o-form-has-errors")]/child::p');
+  }
+
+  public get errorForEmptyPassword(){
+    return $('//*[contains(@class,"o-form-input o-form-has-errors")]/child::p');
+  }
+
+
   /****************************************
      * User is able to login successfully through cookies banner using valid credentials
      * @param username
@@ -38,32 +55,23 @@ class LoginPage {
      * ***************************************
      */
   public async loginPage() {
-    await (await this.signINButton).isDisplayed();
-    await (await this.getSideNavIcon).isDisplayed();
-    (await this.signINButton).click();
+    await Utils.isDisplayedGeneric(this.signINButton,"Sign In Button");
+    await Utils.isDisplayedGeneric(this.getSideNavIcon,"Side Nav Icon");
+    await Utils.genericClick(this.signINButton,"Sign In button");
     await browser.pause(1000);
     (await this.emailIDField).setValue(cred.valid.email);
-    await browser.pause(1000);
     (await this.passwordField).setValue(cred.valid.Password);
     await browser.pause(1000);
-    (await this.signInZarticoButton).click();
-    await browser.pause(2000);
+    await Utils.genericClick(this.signInZarticoButton,"Zartico Sign In Button");
+    await browser.pause(3000);
+    const title= await (await this.title).getText();
+    await Utils.toEqualAssertionTitle(title,"Convention Reports");
     // (await this.oktaPushButton).click();
     // await browser.pause(30000);
     
   }
 
-  public async wrongEmail(){
-    await (await this.signINButton).isDisplayed();
-    (await this.signINButton).click();
-    (await this.emailIDField).setValue("abc");
-    (await this.passwordField).setValue(cred.valid.Password);
-    // (await this.signInZarticoButton).click();
-    // await browser.pause(2000);
-    const currentUrl = browser.getUrl();
-    await expect(currentUrl).to.equal('https://cat-dev.zartico.com/');
-  }
-
+  
   public async getAllKeysFromApplicationTab(){
     const localStorageValues = browser.execute(() => {
         // Access local storage

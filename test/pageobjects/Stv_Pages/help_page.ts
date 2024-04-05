@@ -33,17 +33,17 @@ class HelpPage {
      */
   public async helpPage() {
     await browser.pause(1000);
-    await (await this.getSideNavIcon).isDisplayed();
-    (await this.helpIcon).isDisplayed();
-    (await this.helpIcon).click();
+    await Utils.isDisplayedGeneric(this.getSideNavIcon,"Hamburger Icon");
+    await Utils.isDisplayedGeneric(this.helpIcon,"Help Button");
+    await Utils.genericClick(this.helpIcon,"Sign In button");
     browser.pause(2000);
-    await this.submitTicketLink.isDisplayed();
-    (await this.accessHelpResourceLink).isDisplayed();
-    (await this.provideFeedbackLink).isDisplayed();
+    await Utils.isDisplayedGeneric(this.submitTicketLink,"Submit ticket hyperlink");
+    await Utils.isDisplayedGeneric(this.accessHelpResourceLink,"Access Hlp Rsource hyperlink");
+    await Utils.isDisplayedGeneric(this.provideFeedbackLink,"Provide feedback hyperlink");
     browser.pause(2000);
-    (await this.submitTicketLink).click();
+    await Utils.genericClick(this.submitTicketLink,"Submit Ticket hyperlink");
      // Get the current window handle (main window)
-     const mainWindowHandle = await browser.getWindowHandle();
+    const mainWindowHandle = await browser.getWindowHandle();
      // Get all window handles (including the main window and the new tab)
     const allWindowHandles = await browser.getWindowHandles();
      // Switch to the new tab

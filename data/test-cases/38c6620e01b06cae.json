@@ -1,11 +1,11 @@
 {
-  "uid" : "aa833452a8c0b664",
+  "uid" : "38c6620e01b06cae",
   "name" : "Verify Homepage and HelpPage functionality ",
   "historyId" : "4988966b92e3b6b0d9bac446b00adf60",
   "time" : {
-    "start" : 1712319241584,
-    "stop" : 1712319247853,
-    "duration" : 6269
+    "start" : 1712327738395,
+    "stop" : 1712327744593,
+    "duration" : 6198
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for All functionality CAT",
       "time" : {
-        "start" : 1712319241584,
-        "stop" : 1712319241718,
-        "duration" : 134
+        "start" : 1712327738395,
+        "stop" : 1712327738527,
+        "duration" : 132
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,8 +35,8 @@
     }, {
       "name" : "Hamburger Icon is displayed",
       "time" : {
-        "start" : 1712319242735,
-        "stop" : 1712319242735,
+        "start" : 1712327739545,
+        "stop" : 1712327739545,
         "duration" : 0
       },
       "status" : "passed",
@@ -50,8 +50,8 @@
     }, {
       "name" : "Hamburger Icon is clicked",
       "time" : {
-        "start" : 1712319242798,
-        "stop" : 1712319242798,
+        "start" : 1712327739590,
+        "stop" : 1712327739590,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,9 +65,9 @@
     }, {
       "name" : "Haome Icon is displayed",
       "time" : {
-        "start" : 1712319242820,
-        "stop" : 1712319242820,
-        "duration" : 0
+        "start" : 1712327739612,
+        "stop" : 1712327739613,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,8 +80,8 @@
     }, {
       "name" : "Title >> \"Home\" equal to \"Home\" are matched",
       "time" : {
-        "start" : 1712319242843,
-        "stop" : 1712319242843,
+        "start" : 1712327739635,
+        "stop" : 1712327739635,
         "duration" : 0
       },
       "status" : "passed",
@@ -95,8 +95,8 @@
     }, {
       "name" : "Help Icon is displayed",
       "time" : {
-        "start" : 1712319244865,
-        "stop" : 1712319244865,
+        "start" : 1712327741656,
+        "stop" : 1712327741656,
         "duration" : 0
       },
       "status" : "passed",
@@ -110,8 +110,8 @@
     }, {
       "name" : "Title >> \"Help\" equal to \"Help\" are matched",
       "time" : {
-        "start" : 1712319244883,
-        "stop" : 1712319244883,
+        "start" : 1712327741679,
+        "stop" : 1712327741679,
         "duration" : 0
       },
       "status" : "passed",
@@ -125,8 +125,8 @@
     }, {
       "name" : "Profile Icon is displayed",
       "time" : {
-        "start" : 1712319244901,
-        "stop" : 1712319244901,
+        "start" : 1712327741700,
+        "stop" : 1712327741700,
         "duration" : 0
       },
       "status" : "passed",
@@ -140,8 +140,8 @@
     }, {
       "name" : "Filter option is displayed",
       "time" : {
-        "start" : 1712319244918,
-        "stop" : 1712319244918,
+        "start" : 1712327741716,
+        "stop" : 1712327741716,
         "duration" : 0
       },
       "status" : "passed",
@@ -155,8 +155,8 @@
     }, {
       "name" : "Title >> \"Convention Reports\" equal to \"Convention Reports\" are matched",
       "time" : {
-        "start" : 1712319244932,
-        "stop" : 1712319244932,
+        "start" : 1712327741729,
+        "stop" : 1712327741729,
         "duration" : 0
       },
       "status" : "passed",
@@ -170,8 +170,8 @@
     }, {
       "name" : "Hamburger Icon is displayed",
       "time" : {
-        "start" : 1712319245952,
-        "stop" : 1712319245952,
+        "start" : 1712327742746,
+        "stop" : 1712327742746,
         "duration" : 0
       },
       "status" : "passed",
@@ -185,8 +185,8 @@
     }, {
       "name" : "Help Button is displayed",
       "time" : {
-        "start" : 1712319245965,
-        "stop" : 1712319245965,
+        "start" : 1712327742759,
+        "stop" : 1712327742759,
         "duration" : 0
       },
       "status" : "passed",
@@ -200,8 +200,8 @@
     }, {
       "name" : "Sign In button is clicked",
       "time" : {
-        "start" : 1712319246023,
-        "stop" : 1712319246023,
+        "start" : 1712327742816,
+        "stop" : 1712327742816,
         "duration" : 0
       },
       "status" : "passed",
@@ -215,8 +215,8 @@
     }, {
       "name" : "Submit ticket hyperlink is displayed",
       "time" : {
-        "start" : 1712319246045,
-        "stop" : 1712319246045,
+        "start" : 1712327742835,
+        "stop" : 1712327742835,
         "duration" : 0
       },
       "status" : "passed",
@@ -230,8 +230,8 @@
     }, {
       "name" : "Access Hlp Rsource hyperlink is displayed",
       "time" : {
-        "start" : 1712319246062,
-        "stop" : 1712319246062,
+        "start" : 1712327742852,
+        "stop" : 1712327742852,
         "duration" : 0
       },
       "status" : "passed",
@@ -245,8 +245,8 @@
     }, {
       "name" : "Provide feedback hyperlink is displayed",
       "time" : {
-        "start" : 1712319246083,
-        "stop" : 1712319246083,
+        "start" : 1712327742870,
+        "stop" : 1712327742870,
         "duration" : 0
       },
       "status" : "passed",
@@ -260,8 +260,8 @@
     }, {
       "name" : "Submit Ticket hyperlink is clicked",
       "time" : {
-        "start" : 1712319246135,
-        "stop" : 1712319246135,
+        "start" : 1712327742921,
+        "stop" : 1712327742921,
         "duration" : 0
       },
       "status" : "passed",
@@ -274,9 +274,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "ae7b3ab1338dd99c",
+      "uid" : "d5d20886d4375253",
       "name" : "Console Logs",
-      "source" : "ae7b3ab1338dd99c.txt",
+      "source" : "d5d20886d4375253.txt",
       "type" : "text/plain",
       "size" : 24506
     } ],
@@ -322,6 +322,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "aa833452a8c0b664.json",
+  "source" : "38c6620e01b06cae.json",
   "parameterValues" : [ "chrome-headless-shell-125.0.6400.0" ]
 }

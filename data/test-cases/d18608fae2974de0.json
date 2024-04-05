@@ -1,11 +1,11 @@
 {
-  "uid" : "7fa10f15451eea64",
+  "uid" : "d18608fae2974de0",
   "name" : "Verify Profile Page functionality ",
   "historyId" : "817bef5570e2824e7826e623d3ae767a",
   "time" : {
-    "start" : 1712319249856,
-    "stop" : 1712319255441,
-    "duration" : 5585
+    "start" : 1712327746596,
+    "stop" : 1712327752244,
+    "duration" : 5648
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for All functionality CAT",
       "time" : {
-        "start" : 1712319249857,
-        "stop" : 1712319249982,
-        "duration" : 125
+        "start" : 1712327746596,
+        "stop" : 1712327746734,
+        "duration" : 138
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,9 +34,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "f6d4ea5c0826ebfa",
+      "uid" : "b610422c682bc0f6",
       "name" : "Console Logs",
-      "source" : "f6d4ea5c0826ebfa.txt",
+      "source" : "b610422c682bc0f6.txt",
       "type" : "text/plain",
       "size" : 11625
     } ],
@@ -82,6 +82,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7fa10f15451eea64.json",
+  "source" : "d18608fae2974de0.json",
   "parameterValues" : [ "chrome-headless-shell-125.0.6400.0" ]
 }

@@ -1,14 +1,37 @@
 name: Continuous Integration
 
+
 on:
   push:
     branches:
       - '**'
 
 jobs:
+
+  check_dev_commits:
+    runs-on: ubuntu-latest
+    outputs:
+      has_commits: ${{ steps.check_commit.outputs.has_commits }}
+    steps:
+      - name: Check for new commits in another repository
+        id: check_commit
+        run: |
+          # Add commands to check for commits in another repository
+          # For example:
+          git clone https://github.com/ritadutta/CATAutomationFramework
+          cd https://github.com/ritadutta/CATAutomationFramework
+          git fetch origin
+          NEW_COMMITS=$(git rev-list HEAD..origin/main --count)
+          echo "New commits detected: $NEW_COMMITS"
+          # Determine if there are new commits and set the output accordingly
+          if [ "$NEW_COMMITS" -gt 0 ]; then
+            echo "::set-output name=has_commits::true"
+          else
+            echo "::set-output name=has_commits::false"
+          fi
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Cache dependencies 123
         uses: actions/cache@v2

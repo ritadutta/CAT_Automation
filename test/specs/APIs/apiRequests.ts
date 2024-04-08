@@ -11,9 +11,6 @@ describe('API get request User Flow', () => {
      it('Verify the get api', async () => {
         await LoginPage.loginPage();
         await LoginPage.getAccessToken();
-         //await browser.pause(1000);
-         //await HomePage.homePage();
-         //await HomePage.getAccessToken();
        await browser.pause(2000);
         await api.get_checkAuthCAT();
     

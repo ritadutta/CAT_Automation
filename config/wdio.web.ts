@@ -8,8 +8,8 @@ config.specs = [
   //  "../test/specs/Sanity/ProfileFlow.ts",
    // "../test/specs/Sanity/HelpPageFlow.ts",
   // "../test/specs/Sanity/LogOutFlow.ts",
-   //  "../test/specs/APIs/apiRequests.ts", 
-   "../test/specs/Regression/AllFunctionality.ts",
+     "../test/specs/APIs/apiRequests.ts", 
+   //"../test/specs/Regression/AllFunctionality.ts",
    //"../test/specs/Regression/ErrorScenario.ts"
 ];
 
@@ -23,9 +23,9 @@ config.capabilities = [
      browserName: "chrome",
      browserVersion: "latest",
      acceptInsecureCerts: true,
-    'goog:chromeOptions': {
-          args: ["--headless", "user-agent=...","--disable-gpu","--window-size=1440,735"]
-    }
+    // 'goog:chromeOptions': {
+    //       args: ["--headless", "user-agent=...","--disable-gpu","--window-size=1440,735"]
+    // }
    },
     //browserVersion: "123.0.6301.2",
     // 'goog:chromeOptions': {

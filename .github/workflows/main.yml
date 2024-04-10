@@ -18,8 +18,8 @@ jobs:
         run: |
           # Add commands to check for commits in another repository
           # For example:
-          git clone https://github.com/ritadutta/CATAutomationFramework
-          cd CATAutomationFramework
+          git clone https://github.com/ritadutta/testing
+          cd testing
           git fetch origin
           NEW_COMMITS=$(git rev-list HEAD..origin/main --count)
           echo "New commits detected: $NEW_COMMITS"

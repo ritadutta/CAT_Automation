@@ -1,6 +1,5 @@
 name: Continuous Integration
 
-
 on:
   push:
     branches:
@@ -29,6 +28,7 @@ jobs:
           else
             echo "::set-output name=has_commits::false"
           fi
+
   build:
     runs-on: ubuntu-latest
 

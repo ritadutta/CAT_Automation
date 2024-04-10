@@ -24,9 +24,9 @@ jobs:
           echo "New commits detected: $NEW_COMMITS"
           # Determine if there are new commits and set the output accordingly
           if [ "$NEW_COMMITS" -gt 0 ]; then
-            echo "::set-output name=has_commits::true"
+            echo "has_commits=true" >> $GITHUB_ENV
           else
-            echo "::set-output name=has_commits::false"
+            echo "has_commits=false" >> $GITHUB_ENV
           fi
 
   build:

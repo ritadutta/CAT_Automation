@@ -1,40 +1,10 @@
 [ {
-  "uid" : "38c6620e01b06cae",
-  "name" : "Verify Homepage and HelpPage functionality ",
+  "uid" : "66483ef50b8a29d6",
+  "name" : "Verify user is able to login",
   "time" : {
-    "start" : 1712327738395,
-    "stop" : 1712327744593,
-    "duration" : 6198
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6aef330867e0e78d",
-  "name" : "Verify Signout functionality ",
-  "time" : {
-    "start" : 1712327754245,
-    "stop" : 1712327768548,
-    "duration" : 14303
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7a1c2c1470605c12",
-  "name" : "Verify Signin functionality ",
-  "time" : {
-    "start" : 1712327729520,
-    "stop" : 1712327736392,
-    "duration" : 6872
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d18608fae2974de0",
-  "name" : "Verify Profile Page functionality ",
-  "time" : {
-    "start" : 1712327746596,
-    "stop" : 1712327752244,
-    "duration" : 5648
+    "start" : 1712834897702,
+    "stop" : 1712834917937,
+    "duration" : 20235
   },
   "status" : "passed",
   "severity" : "normal"

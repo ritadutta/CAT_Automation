@@ -1,16 +1,16 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts",
+    "name" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Sanity.LoginUserFlow.ts",
     "children" : [ {
-      "name" : "Verify Signin functionality ",
-      "uid" : "7a1c2c1470605c12",
-      "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
+      "name" : "Verify user is able to login",
+      "uid" : "66483ef50b8a29d6",
+      "parentUid" : "e5146863f2cf9305a1a5ed9a38d4119c",
       "status" : "passed",
       "time" : {
-        "start" : 1712327729520,
-        "stop" : 1712327736392,
-        "duration" : 6872
+        "start" : 1712834897702,
+        "stop" : 1712834917937,
+        "duration" : 20235
       },
       "flaky" : false,
       "newFailed" : false,
@@ -18,60 +18,9 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
-    }, {
-      "name" : "Verify Homepage and HelpPage functionality ",
-      "uid" : "38c6620e01b06cae",
-      "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
-      "status" : "passed",
-      "time" : {
-        "start" : 1712327738395,
-        "stop" : 1712327744593,
-        "duration" : 6198
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
-    }, {
-      "name" : "Verify Profile Page functionality ",
-      "uid" : "d18608fae2974de0",
-      "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
-      "status" : "passed",
-      "time" : {
-        "start" : 1712327746596,
-        "stop" : 1712327752244,
-        "duration" : 5648
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
-    }, {
-      "name" : "Verify Signout functionality ",
-      "uid" : "6aef330867e0e78d",
-      "parentUid" : "24282dd3cb78e51fc34b355126c86e53",
-      "status" : "passed",
-      "time" : {
-        "start" : 1712327754245,
-        "stop" : 1712327768548,
-        "duration" : 14303
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "newPassed" : false,
-      "newBroken" : false,
-      "retriesCount" : 0,
-      "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-125.0.6400.0" ]
+      "parameters" : [ "chrome-headless-shell-125.0.6412.0" ]
     } ],
-    "uid" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Regression.AllFunctionality.ts"
+    "uid" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Sanity.LoginUserFlow.ts"
   } ],
   "name" : "packages"
 }

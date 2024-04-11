@@ -1,0 +1,11 @@
+.........Console Logs.........
+
+::::::::::Test  Verify user is able to login  Started::::::::::
+[PASS]: Sign In Button is displayed
+[PASS]: Side Nav Icon is displayed
+[PASS]: Sign In button is clicked
+[PASS]: Zartico Sign In Button is clicked
+[PASS]: Title >> "Convention Reports" equal to "Convention Reports" are matched
+::::::::::Test  Verify user is able to login  Passed::::::::::
+
+

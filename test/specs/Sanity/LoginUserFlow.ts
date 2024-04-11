@@ -1,5 +1,6 @@
 import login_page from '../../pageobjects/Stv_Pages/login_page';
-import LoginPage from '../../pageobjects/Stv_Pages/login_page'
+import LoginPage from '../../pageobjects/Stv_Pages/login_page';
+import logout from '../../pageobjects/Stv_Pages/logout_page';
 
 describe('Login User Flow', () => {
     beforeEach(async () => {
@@ -9,6 +10,7 @@ describe('Login User Flow', () => {
 
      it('Verify user is able to login', async () => {
      await LoginPage.loginPage();
+     await logout.logoutPage();
     });   
      
     afterEach(async () => {

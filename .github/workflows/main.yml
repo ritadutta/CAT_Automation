@@ -6,33 +6,11 @@ on:
       - '**'
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
-    outputs:
-      has_commits: ${{ steps.check_commit.outputs.has_commits }}
-
     steps:
-      - name: Check for new commits in another repository
-        id: check_commit
-        run: |
-          # Add commands to check for commits in another repository
-          # For example:
-          git clone https://github.com/ritadutta/testing
-          cd testing
-          git fetch origin
-          NEW_COMMITS=$(git rev-list HEAD..origin/main --count)
-          echo "New commits detected: $NEW_COMMITS"
-          # Determine if there are new commits and set the output accordingly
-          if [ "$NEW_COMMITS" -gt 0 ]; then
-            echo "has_commits=true" >> $GITHUB_ENV
-          else
-            echo "has_commits=false" >> $GITHUB_ENV
-          fi
-
       - name: Cache dependencies 123
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         uses: actions/cache@v2
         with:
           path: |
@@ -45,29 +23,23 @@ jobs:
             ${{ runner.os }}-
 
       - name: Checkout code
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         uses: actions/checkout@v2
 
       - name: Install Chromium
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         run: sudo apt install chromium-browser
 
       - name: Use Node.js
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         uses: actions/setup-node@v1
         with:
           node-version: 16.15.1
 
       - name: Install dependencies
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         run: npm install
 
       - name: Run E2E tests
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         run: npx cross-env ENV=dev npm run web
 
       - name: Download and Install Allure
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         run: |
           wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.16.0/allure-commandline-2.16.0.zip
           unzip allure-commandline-2.16.0.zip
@@ -75,13 +47,12 @@ jobs:
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
 
       - name: Generate Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         run: |
           allure generate allure-results --clean -o allure-report
 
       - name: Publish Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
+

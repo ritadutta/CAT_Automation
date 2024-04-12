@@ -4,13 +4,13 @@
     "name" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Sanity.LoginUserFlow.ts",
     "children" : [ {
       "name" : "Verify user is able to login",
-      "uid" : "b57bc1101bccd884",
+      "uid" : "bd6ad14967c46760",
       "parentUid" : "e5146863f2cf9305a1a5ed9a38d4119c",
       "status" : "passed",
       "time" : {
-        "start" : 1712927488273,
-        "stop" : 1712927508959,
-        "duration" : 20686
+        "start" : 1712928005834,
+        "stop" : 1712928025831,
+        "duration" : 19997
       },
       "flaky" : false,
       "newFailed" : false,

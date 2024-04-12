@@ -1,11 +1,11 @@
 {
-  "uid" : "b57bc1101bccd884",
+  "uid" : "bd6ad14967c46760",
   "name" : "Verify user is able to login",
   "historyId" : "22b1c5dfe02c6b2dcdedf3250a7c6d90",
   "time" : {
-    "start" : 1712927488273,
-    "stop" : 1712927508959,
-    "duration" : 20686
+    "start" : 1712928005834,
+    "stop" : 1712928025831,
+    "duration" : 19997
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for Login User Flow",
       "time" : {
-        "start" : 1712927488274,
-        "stop" : 1712927489579,
-        "duration" : 1305
+        "start" : 1712928005835,
+        "stop" : 1712928006309,
+        "duration" : 474
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,8 +35,8 @@
     }, {
       "name" : "Sign In Button is displayed",
       "time" : {
-        "start" : 1712927489606,
-        "stop" : 1712927489606,
+        "start" : 1712928006351,
+        "stop" : 1712928006351,
         "duration" : 0
       },
       "status" : "passed",
@@ -50,8 +50,8 @@
     }, {
       "name" : "Side Nav Icon is displayed",
       "time" : {
-        "start" : 1712927489624,
-        "stop" : 1712927489624,
+        "start" : 1712928006371,
+        "stop" : 1712928006371,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,8 +65,8 @@
     }, {
       "name" : "Sign In button is clicked",
       "time" : {
-        "start" : 1712927489693,
-        "stop" : 1712927489693,
+        "start" : 1712928006462,
+        "stop" : 1712928006462,
         "duration" : 0
       },
       "status" : "passed",
@@ -80,8 +80,8 @@
     }, {
       "name" : "Zartico Sign In Button is clicked",
       "time" : {
-        "start" : 1712927491795,
-        "stop" : 1712927491795,
+        "start" : 1712928008663,
+        "stop" : 1712928008663,
         "duration" : 0
       },
       "status" : "passed",
@@ -95,8 +95,8 @@
     }, {
       "name" : "Title >> \"Convention Reports\" equal to \"Convention Reports\" are matched",
       "time" : {
-        "start" : 1712927494822,
-        "stop" : 1712927494822,
+        "start" : 1712928011687,
+        "stop" : 1712928011687,
         "duration" : 0
       },
       "status" : "passed",
@@ -109,9 +109,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "cc63dbdfa7176f00",
+      "uid" : "64eca0c07bb25c6f",
       "name" : "Console Logs",
-      "source" : "cc63dbdfa7176f00.txt",
+      "source" : "64eca0c07bb25c6f.txt",
       "type" : "text/plain",
       "size" : 388
     } ],
@@ -157,6 +157,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b57bc1101bccd884.json",
+  "source" : "bd6ad14967c46760.json",
   "parameterValues" : [ "chrome-headless-shell-125.0.6414.0" ]
 }

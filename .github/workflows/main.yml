@@ -23,7 +23,7 @@ jobs:
           echo "Commit Message: $COMMIT_MESSAGE"
       
       - name: Cache dependencies 123
-        if: ${{ steps.check_commit1 != null }}
+        if: ${{ steps.check_commit != null }}
         uses: actions/cache@v2
         with:
           path: |

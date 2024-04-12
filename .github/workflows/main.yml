@@ -1,58 +1,22 @@
-name: Continuous Integration
+name: Fetch Commit Message
 
 on:
   push:
     branches:
-      - '**'
+      - main
 
 jobs:
-  build:
+  fetch_commit_message:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Cache dependencies 123
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/.cache
-            /opt/allure
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-            ${{ runner.os }}-
-
-      - name: Checkout code
+      - name: Checkout other repository
         uses: actions/checkout@v2
-
-      - name: Install Chromium
-        run: sudo apt install chromium-browser
-
-      - name: Use Node.js
-        uses: actions/setup-node@v1
         with:
-          node-version: 16.15.1
+          repository: ritada/CATAutomationFramework
+          ref: main
+          token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run E2E tests
-        run: npx cross-env ENV=dev npm run web
-
-      - name: Download and Install Allure
+      - name: Fetch Commit Message
         run: |
-          wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.16.0/allure-commandline-2.16.0.zip
-          unzip allure-commandline-2.16.0.zip
-          sudo mv allure-2.16.0 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-
-      - name: Generate Allure Reports
-        run: |
-          allure generate allure-results --clean -o allure-report
-
-      - name: Publish Allure Reports
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          echo "Commit Message: $COMMIT_MESSAGE"

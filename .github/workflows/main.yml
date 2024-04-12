@@ -1,22 +1,17 @@
-name: Fetch Commit Message
-
+name: Fetch Commit Messages
 on:
   push:
     branches:
-      - main
-
+      - master
 jobs:
-  fetch_commit_message:
+  fetch-commits:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout other repository
+      - name: Checkout https://github.com/ritadutta/testing.git repository
         uses: actions/checkout@v2
         with:
-          repository: ritada/CATAutomationFramework
-          ref: main
-          token: ${{ secrets.ACCESS_TOKEN }}
-
-      - name: Fetch Commit Message
+          repository: https://github.com/ritadutta/testing.git
+          ref: main  # or whichever branch you want to monitor
+      - name: Print commit messages
         run: |
-          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
-          echo "Commit Message: $COMMIT_MESSAGE"
+          git log --format="%h %s" --no-merges origin/main..HEAD

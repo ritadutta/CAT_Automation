@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Apr 12 13:20:05 UTC 2024","Fri Apr 12 13:20:25 UTC 2024","19997","","Login User Flow","","","","Verify user is able to login",""
+"passed","Fri Apr 12 14:13:47 UTC 2024","Fri Apr 12 14:14:07 UTC 2024","20532","","Login User Flow","","","","Verify user is able to login",""

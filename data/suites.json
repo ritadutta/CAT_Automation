@@ -4,13 +4,13 @@
     "name" : "Login User Flow",
     "children" : [ {
       "name" : "Verify user is able to login",
-      "uid" : "bd6ad14967c46760",
+      "uid" : "1d92584814ded119",
       "parentUid" : "c1e3bd9898b5f185a9422e3b221cf7a1",
       "status" : "passed",
       "time" : {
-        "start" : 1712928005834,
-        "stop" : 1712928025831,
-        "duration" : 19997
+        "start" : 1712931227151,
+        "stop" : 1712931247683,
+        "duration" : 20532
       },
       "flaky" : false,
       "newFailed" : false,

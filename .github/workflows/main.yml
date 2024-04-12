@@ -21,115 +21,12 @@ jobs:
         run: |
           COMMIT_MESSAGE=$(git log -1 --pretty=%B)
           echo "Commit Message: $COMMIT_MESSAGE"
-      
-      - name: Cache dependencies 123
-        if: ${{ steps.check_commit != null }}
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/.cache
-            /opt/allure
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-            ${{ runner.os }}-
-
-      - name: Checkout code
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: actions/checkout@v2
-
-      - name: Install Chromium
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: sudo apt install chromium-browser
-
-      - name: Use Node.js
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.15.1
-
-      - name: Install dependencies
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: npm install
-
-      - name: Run E2E tests
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: npx cross-env ENV=dev npm run web
-
-      - name: Download and Install Allure
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
+          echo "::set-output name=commit_message::$COMMIT_MESSAGE"
+      - name: Check Commit Message
         run: |
-          wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.16.0/allure-commandline-2.16.0.zip
-          unzip allure-commandline-2.16.0.zip
-          sudo mv allure-2.16.0 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-
-      - name: Generate Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: |
-          allure generate allure-results --clean -o allure-report
-
-      - name: Publish Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-      
-      - name: Cache dependencies 123
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/.cache
-            /opt/allure
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-            ${{ runner.os }}-
-
-      - name: Checkout code
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: actions/checkout@v2
-
-      - name: Install Chromium
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: sudo apt install chromium-browser
-
-      - name: Use Node.js
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.15.1
-
-      - name: Install dependencies
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: npm install
-
-      - name: Run E2E tests
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: npx cross-env ENV=dev npm run web
-
-      - name: Download and Install Allure
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: |
-          wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.16.0/allure-commandline-2.16.0.zip
-          unzip allure-commandline-2.16.0.zip
-          sudo mv allure-2.16.0 /opt/allure
-          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
-
-      - name: Generate Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        run: |
-          allure generate allure-results --clean -o allure-report
-
-      - name: Publish Allure Reports
-        if: ${{ steps.check_commit.outputs.has_commits == 'true' }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./allure-report
-
+          if [[ "${{ steps.check_commit.outputs.commit_message }}" == *"dev"* ]]; then
+            echo "Success"
+          else
+            echo "Failure"
+          fi
+  

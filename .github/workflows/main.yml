@@ -36,17 +36,16 @@ jobs:
       
       - name: Cache dependencies 123
         if: ${{ steps.check_commit_message.outputs.success == 'true' }}
-        run: |
-         uses: actions/cache@v2
-         with:
+        uses: actions/cache@v2
+        with:
           path: |
-             ~/.npm
-             ~/.cache
-             /opt/allure
-           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-           restore-keys: |
-             ${{ runner.os }}-node-
-             ${{ runner.os }}-
+            ~/.npm
+            ~/.cache
+            /opt/allure
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            ${{ runner.os }}-
  
       - name: Checkout code
         uses: actions/checkout@v2

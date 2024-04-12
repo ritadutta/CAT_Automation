@@ -26,7 +26,7 @@ jobs:
       - name: Check Commit Message
         id: check_commit_message
         run: |
-         if [[ "${{ steps.check_commit.outputs.commit_message }}" == *"commit"* ]]; then
+         if [[ "${{ steps.check_commit.outputs.commit_message }}" == *"dev"* ]]; then
           echo "Success"
           echo "::set-output name=success::true" # Setting the output for conditional execution
          else

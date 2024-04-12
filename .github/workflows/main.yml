@@ -34,8 +34,8 @@ jobs:
           echo "::set-output name=success::false" # Setting the output for conditional execution
          fi
       
+         if: ${{ steps.check_commit_message.outputs.success == 'true' }}
       - name: Cache dependencies 123
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
         uses: actions/cache@v2
         with:
           path: |

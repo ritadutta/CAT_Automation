@@ -1,11 +1,11 @@
 {
-  "uid" : "1d92584814ded119",
+  "uid" : "3703bbe31c5ff4c8",
   "name" : "Verify user is able to login",
-  "historyId" : "22b1c5dfe02c6b2dcdedf3250a7c6d90",
+  "historyId" : "f800989ea739969a1737ecdb0a014f5e",
   "time" : {
-    "start" : 1712931227151,
-    "stop" : 1712931247683,
-    "duration" : 20532
+    "start" : 1713172798092,
+    "stop" : 1713172818983,
+    "duration" : 20891
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for Login User Flow",
       "time" : {
-        "start" : 1712931227152,
-        "stop" : 1712931228117,
-        "duration" : 965
+        "start" : 1713172798093,
+        "stop" : 1713172799172,
+        "duration" : 1079
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,8 +35,8 @@
     }, {
       "name" : "Sign In Button is displayed",
       "time" : {
-        "start" : 1712931228157,
-        "stop" : 1712931228157,
+        "start" : 1713172799219,
+        "stop" : 1713172799219,
         "duration" : 0
       },
       "status" : "passed",
@@ -50,8 +50,8 @@
     }, {
       "name" : "Side Nav Icon is displayed",
       "time" : {
-        "start" : 1712931228179,
-        "stop" : 1712931228179,
+        "start" : 1713172799266,
+        "stop" : 1713172799266,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,8 +65,8 @@
     }, {
       "name" : "Sign In button is clicked",
       "time" : {
-        "start" : 1712931228264,
-        "stop" : 1712931228264,
+        "start" : 1713172799317,
+        "stop" : 1713172799317,
         "duration" : 0
       },
       "status" : "passed",
@@ -80,8 +80,8 @@
     }, {
       "name" : "Zartico Sign In Button is clicked",
       "time" : {
-        "start" : 1712931230516,
-        "stop" : 1712931230516,
+        "start" : 1713172801796,
+        "stop" : 1713172801796,
         "duration" : 0
       },
       "status" : "passed",
@@ -95,8 +95,8 @@
     }, {
       "name" : "Title >> \"Convention Reports\" equal to \"Convention Reports\" are matched",
       "time" : {
-        "start" : 1712931233541,
-        "stop" : 1712931233541,
+        "start" : 1713172804827,
+        "stop" : 1713172804827,
         "duration" : 0
       },
       "status" : "passed",
@@ -109,9 +109,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "3f6a093fa5ee015d",
+      "uid" : "12ca74687238846e",
       "name" : "Console Logs",
-      "source" : "3f6a093fa5ee015d.txt",
+      "source" : "12ca74687238846e.txt",
       "type" : "text/plain",
       "size" : 388
     } ],
@@ -146,7 +146,7 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome-headless-shell-125.0.6414.0"
+    "value" : "chrome-headless-shell-125.0.6420.0"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -157,6 +157,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1d92584814ded119.json",
-  "parameterValues" : [ "chrome-headless-shell-125.0.6414.0" ]
+  "source" : "3703bbe31c5ff4c8.json",
+  "parameterValues" : [ "chrome-headless-shell-125.0.6420.0" ]
 }

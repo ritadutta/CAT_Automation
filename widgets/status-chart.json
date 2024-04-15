@@ -1,10 +1,10 @@
 [ {
-  "uid" : "1d92584814ded119",
+  "uid" : "3703bbe31c5ff4c8",
   "name" : "Verify user is able to login",
   "time" : {
-    "start" : 1712931227151,
-    "stop" : 1712931247683,
-    "duration" : 20532
+    "start" : 1713172798092,
+    "stop" : 1713172818983,
+    "duration" : 20891
   },
   "status" : "passed",
   "severity" : "normal"

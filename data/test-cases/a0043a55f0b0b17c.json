@@ -1,11 +1,11 @@
 {
-  "uid" : "3703bbe31c5ff4c8",
+  "uid" : "a0043a55f0b0b17c",
   "name" : "Verify user is able to login",
-  "historyId" : "f800989ea739969a1737ecdb0a014f5e",
+  "historyId" : "b80d408949a878fcab7376ca5d548846",
   "time" : {
-    "start" : 1713172798092,
-    "stop" : 1713172818983,
-    "duration" : 20891
+    "start" : 1715684440983,
+    "stop" : 1715684461077,
+    "duration" : 20094
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for Login User Flow",
       "time" : {
-        "start" : 1713172798093,
-        "stop" : 1713172799172,
-        "duration" : 1079
+        "start" : 1715684440984,
+        "stop" : 1715684441411,
+        "duration" : 427
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,23 +35,8 @@
     }, {
       "name" : "Sign In Button is displayed",
       "time" : {
-        "start" : 1713172799219,
-        "stop" : 1713172799219,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Side Nav Icon is displayed",
-      "time" : {
-        "start" : 1713172799266,
-        "stop" : 1713172799266,
+        "start" : 1715684441452,
+        "stop" : 1715684441452,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,8 +50,8 @@
     }, {
       "name" : "Sign In button is clicked",
       "time" : {
-        "start" : 1713172799317,
-        "stop" : 1713172799317,
+        "start" : 1715684441549,
+        "stop" : 1715684441549,
         "duration" : 0
       },
       "status" : "passed",
@@ -80,8 +65,8 @@
     }, {
       "name" : "Zartico Sign In Button is clicked",
       "time" : {
-        "start" : 1713172801796,
-        "stop" : 1713172801796,
+        "start" : 1715684443912,
+        "stop" : 1715684443912,
         "duration" : 0
       },
       "status" : "passed",
@@ -93,10 +78,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Title >> \"Convention Reports\" equal to \"Convention Reports\" are matched",
+      "name" : "Title >> \"Meeting & Convention Reports\" equal to \"Meeting & Convention Reports\" are matched",
       "time" : {
-        "start" : 1713172804827,
-        "stop" : 1713172804827,
+        "start" : 1715684446935,
+        "stop" : 1715684446935,
         "duration" : 0
       },
       "status" : "passed",
@@ -109,14 +94,14 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "12ca74687238846e",
+      "uid" : "c78e246976678c70",
       "name" : "Console Logs",
-      "source" : "12ca74687238846e.txt",
+      "source" : "c78e246976678c70.txt",
       "type" : "text/plain",
-      "size" : 388
+      "size" : 373
     } ],
     "parameters" : [ ],
-    "stepsCount" : 6,
+    "stepsCount" : 5,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -146,7 +131,7 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome-headless-shell-125.0.6420.0"
+    "value" : "chrome-headless-shell-126.0.6478.0"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -157,6 +142,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3703bbe31c5ff4c8.json",
-  "parameterValues" : [ "chrome-headless-shell-125.0.6420.0" ]
+  "source" : "a0043a55f0b0b17c.json",
+  "parameterValues" : [ "chrome-headless-shell-126.0.6478.0" ]
 }

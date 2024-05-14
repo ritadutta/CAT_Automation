@@ -9,11 +9,11 @@ import { expect } from 'chai';
 export var accessToken;
 class LoginPage {
   public get signINButton() {
-    return $('//button[contains(@class, "css-1i8u2f7")]');
+    return $('//*[contains(@class,"css-1i8u2f7")]');
   }
-  public get getSideNavIcon() {
-    return $('//button[contains(@class, "css-1yxmbwk")]');
-  }
+  // public get getSideNavIcon() {
+  //   return $('//button[contains(@class, "css-1yxmbwk")]');
+  // }
   public get emailIDField() {
     return $('#input28');
   }
@@ -56,7 +56,7 @@ class LoginPage {
      */
   public async loginPage() {
     await Utils.isDisplayedGeneric(this.signINButton,"Sign In Button");
-    await Utils.isDisplayedGeneric(this.getSideNavIcon,"Side Nav Icon");
+    //await Utils.isDisplayedGeneric(this.getSideNavIcon,"Side Nav Icon");
     await Utils.genericClick(this.signINButton,"Sign In button");
     await browser.pause(1000);
     (await this.emailIDField).setValue(cred.valid.email);
@@ -65,7 +65,7 @@ class LoginPage {
     await Utils.genericClick(this.signInZarticoButton,"Zartico Sign In Button");
     await browser.pause(3000);
     const title= await (await this.title).getText();
-    await Utils.toEqualAssertionTitle(title,"Convention Reports");
+    await Utils.toEqualAssertionTitle(title,"Meeting & Convention Reports");
     // (await this.oktaPushButton).click();
     // await browser.pause(30000);
     

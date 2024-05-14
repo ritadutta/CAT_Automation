@@ -8,10 +8,10 @@ describe('API get request User Flow', () => {
         await browser.maximizeWindow();
     });
 
-     it('Verify the get api', async () => {
+     it('@api Verify the get api', async () => {
         await LoginPage.loginPage();
         await LoginPage.getAccessToken();
-       await browser.pause(2000);
+        await browser.pause(2000);
         await api.get_checkAuthCAT();
     
     });

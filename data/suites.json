@@ -4,13 +4,13 @@
     "name" : "Login User Flow",
     "children" : [ {
       "name" : "Verify user is able to login",
-      "uid" : "a0043a55f0b0b17c",
+      "uid" : "c1f40fdbb71e822f",
       "parentUid" : "c1e3bd9898b5f185a9422e3b221cf7a1",
       "status" : "passed",
       "time" : {
-        "start" : 1715684440983,
-        "stop" : 1715684461077,
-        "duration" : 20094
+        "start" : 1715872034083,
+        "stop" : 1715872055025,
+        "duration" : 20942
       },
       "flaky" : false,
       "newFailed" : false,
@@ -18,7 +18,7 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-126.0.6478.0" ]
+      "parameters" : [ "chrome-headless-shell-126.0.6478.2" ]
     } ],
     "uid" : "c1e3bd9898b5f185a9422e3b221cf7a1"
   } ],

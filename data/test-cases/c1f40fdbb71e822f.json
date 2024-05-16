@@ -1,11 +1,11 @@
 {
-  "uid" : "a0043a55f0b0b17c",
+  "uid" : "c1f40fdbb71e822f",
   "name" : "Verify user is able to login",
-  "historyId" : "b80d408949a878fcab7376ca5d548846",
+  "historyId" : "34eb9e01dc2c6c3581203d57d0c6515d",
   "time" : {
-    "start" : 1715684440983,
-    "stop" : 1715684461077,
-    "duration" : 20094
+    "start" : 1715872034083,
+    "stop" : 1715872055025,
+    "duration" : 20942
   },
   "status" : "passed",
   "flaky" : false,
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "\"before each\" hook for Login User Flow",
       "time" : {
-        "start" : 1715684440984,
-        "stop" : 1715684441411,
-        "duration" : 427
+        "start" : 1715872034084,
+        "stop" : 1715872035220,
+        "duration" : 1136
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,8 +35,8 @@
     }, {
       "name" : "Sign In Button is displayed",
       "time" : {
-        "start" : 1715684441452,
-        "stop" : 1715684441452,
+        "start" : 1715872035261,
+        "stop" : 1715872035261,
         "duration" : 0
       },
       "status" : "passed",
@@ -50,8 +50,8 @@
     }, {
       "name" : "Sign In button is clicked",
       "time" : {
-        "start" : 1715684441549,
-        "stop" : 1715684441549,
+        "start" : 1715872035349,
+        "stop" : 1715872035349,
         "duration" : 0
       },
       "status" : "passed",
@@ -65,8 +65,8 @@
     }, {
       "name" : "Zartico Sign In Button is clicked",
       "time" : {
-        "start" : 1715684443912,
-        "stop" : 1715684443912,
+        "start" : 1715872037839,
+        "stop" : 1715872037839,
         "duration" : 0
       },
       "status" : "passed",
@@ -80,8 +80,8 @@
     }, {
       "name" : "Title >> \"Meeting & Convention Reports\" equal to \"Meeting & Convention Reports\" are matched",
       "time" : {
-        "start" : 1715684446935,
-        "stop" : 1715684446935,
+        "start" : 1715872040886,
+        "stop" : 1715872040886,
         "duration" : 0
       },
       "status" : "passed",
@@ -94,9 +94,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "c78e246976678c70",
+      "uid" : "924465ef9870e9a8",
       "name" : "Console Logs",
-      "source" : "c78e246976678c70.txt",
+      "source" : "924465ef9870e9a8.txt",
       "type" : "text/plain",
       "size" : 373
     } ],
@@ -131,7 +131,7 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome-headless-shell-126.0.6478.0"
+    "value" : "chrome-headless-shell-126.0.6478.2"
   } ],
   "links" : [ ],
   "hidden" : false,
@@ -142,6 +142,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a0043a55f0b0b17c.json",
-  "parameterValues" : [ "chrome-headless-shell-126.0.6478.0" ]
+  "source" : "c1f40fdbb71e822f.json",
+  "parameterValues" : [ "chrome-headless-shell-126.0.6478.2" ]
 }

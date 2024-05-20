@@ -4,13 +4,13 @@
     "name" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Sanity.LoginUserFlow.ts",
     "children" : [ {
       "name" : "Verify user is able to login",
-      "uid" : "c1f40fdbb71e822f",
+      "uid" : "e9a0c791ccb8652e",
       "parentUid" : "e5146863f2cf9305a1a5ed9a38d4119c",
       "status" : "passed",
       "time" : {
-        "start" : 1715872034083,
-        "stop" : 1715872055025,
-        "duration" : 20942
+        "start" : 1716218472422,
+        "stop" : 1716218492546,
+        "duration" : 20124
       },
       "flaky" : false,
       "newFailed" : false,
@@ -18,7 +18,7 @@
       "newBroken" : false,
       "retriesCount" : 0,
       "retriesStatusChange" : false,
-      "parameters" : [ "chrome-headless-shell-126.0.6478.2" ]
+      "parameters" : [ "chrome-headless-shell-127.0.6490.0" ]
     } ],
     "uid" : ".home.runner.work.CAT_Automation.CAT_Automation.test.specs.Sanity.LoginUserFlow.ts"
   } ],

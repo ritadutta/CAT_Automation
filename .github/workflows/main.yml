@@ -23,19 +23,22 @@ jobs:
           echo "Commit Message: $COMMIT_MESSAGE"
           echo "::set-output name=commit_message::$COMMIT_MESSAGE"
 
-      - name: Check Commit Message
-        id: check_commit_message
+      - name: Extract URL from Commit Message
+        id: extract_url
         run: |
-         if [[ "${{ steps.check_commit.outputs.commit_message }}" == *"dev"* ]]; then
-          echo "Success"
-          echo "::set-output name=success::true" # Setting the output for conditional execution
-         else
-          echo "Failure"
-          echo "::set-output name=success::false" # Setting the output for conditional execution
-         fi
+          COMMIT_MESSAGE="${{ steps.check_commit.outputs.commit_message }}"
+          if [[ $COMMIT_MESSAGE =~ (http.*com) ]]; then
+            URL="${BASH_REMATCH[1]}"
+            echo "Found URL: $URL"
+            echo "::set-output name=url::$URL"
+            echo "::set-output name=success::true"
+          else
+            echo "No matching URL found"
+            echo "::set-output name=success::false"
+          fi
 
       - name: Cache dependencies 123
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         uses: actions/cache@v2
         with:
           path: |
@@ -48,29 +51,29 @@ jobs:
             ${{ runner.os }}-
  
       - name: Checkout code
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         uses: actions/checkout@v2
  
       - name: Install Chromium
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         run: sudo apt install chromium-browser
  
       - name: Use Node.js
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         uses: actions/setup-node@v1
         with:
            node-version: 16.15.1
  
       - name: Install dependencies
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         run: npm install
  
       - name: Run E2E tests
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
-        run: npx cross-env ENV=dev npm run web
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
+        run: npx cross-env BASE_URL=${{ steps.extract_url.outputs.url }} npm run web
  
       - name: Download and Install Allure
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         run: |
            wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.16.0/allure-commandline-2.16.0.zip
            unzip allure-commandline-2.16.0.zip
@@ -78,12 +81,12 @@ jobs:
            sudo ln -s /opt/allure/bin/allure /usr/bin/allure
  
       - name: Generate Allure Reports
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         run: |
            allure generate allure-results --clean -o allure-report
  
       - name: Publish Allure Reports
-        if: ${{ steps.check_commit_message.outputs.success == 'true' }}
+        if: ${{ steps.extract_url.outputs.success == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
            github_token: ${{ secrets.GITHUB_TOKEN }}

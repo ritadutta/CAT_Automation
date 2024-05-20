@@ -12,14 +12,14 @@ const url = require("../test/testdata/urls");
  const {assert }= require('chai')
 
 
-const envurl = url[process.env.ENV];
-const ENV = process.env.ENV;
-//let allureDir = "reports/allure/"
+// const envurl = url[process.env.ENV];
+// const ENV = process.env.ENV;
+// //let allureDir = "reports/allure/"
 
-if (!ENV || !["stage", "prod", "test", "dev"].includes(ENV)) {
-  console.log("please pass the correct ENV value : ENV=prod|stage|test|dev");
-  process.exit();
-}
+// if (!ENV || !["stage", "prod", "test", "dev"].includes(ENV)) {
+//   console.log("please pass the correct ENV value : ENV=prod|stage|test|dev");
+//   process.exit();
+//}
 
 export const config: Options.Testrunner = {
   //
@@ -124,7 +124,8 @@ export const config: Options.Testrunner = {
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
   //baseUrl: 'https://uat.lms.excelr.com',
-  baseUrl: url[process.env.ENV], //uat/dev
+  baseUrl: process.env.BASE_URL, 
+  //url[process.env.ENV], //uat/dev
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 30000,
@@ -174,9 +175,9 @@ export const config: Options.Testrunner = {
         disableMochaHooks:true,
         addConsoleLogs: true,
         reportedEnvironmentVars: {
-          Environment: ENV,
+         // Environment: ENV,
           Platform: process.platform,
-          URL: envurl,
+          //URL: envurl,
         },
       },
     ]

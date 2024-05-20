@@ -30,7 +30,8 @@
   "scripts": {
     "web": "wdio run ./config/wdio.web.ts",
     "android": "wdio run ./config/wdio.android.ts",
-    "report": "allure generate --clean && allure serve allure-results"
+    "report": "allure generate --clean && allure serve allure-results",
+    "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
     "allure-commandline": "^2.24.1",

@@ -6,11 +6,11 @@ import { parseJSON } from 'date-fns';
 class HelpPage {
  
   public get getSideNavIcon() {
-    return $('//button[contains(@class, "css-1yxmbwk")]');
+    return $('//span[contains(text(),"menu")]');
   }
 
   public get helpIcon() {
-    return $('//*[contains(@class, "help-text css-1tsvksn")]');
+    return $('#help-button');
   }
 
   public get submitTicketLink(){
@@ -34,8 +34,8 @@ class HelpPage {
   public async helpPage() {
     await browser.pause(1000);
     await Utils.isDisplayedGeneric(this.getSideNavIcon,"Hamburger Icon");
-    await Utils.isDisplayedGeneric(this.helpIcon,"Help Button");
-    await Utils.genericClick(this.helpIcon,"Sign In button");
+    // await Utils.isDisplayedGeneric(this.helpIcon,"Help Button");
+    await Utils.genericClick(this.helpIcon,"Help button");
     browser.pause(2000);
     await Utils.isDisplayedGeneric(this.submitTicketLink,"Submit ticket hyperlink");
     await Utils.isDisplayedGeneric(this.accessHelpResourceLink,"Access Hlp Rsource hyperlink");

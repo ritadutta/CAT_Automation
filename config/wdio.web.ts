@@ -3,8 +3,8 @@ import { config } from "./wdio.conf";
 config.specs = [
 
    
-    "../test/specs/Sanity/LoginUserFlow.ts",
-  //  "../test/specs/Sanity/HomePageFlow.ts",
+   // "../test/specs/Sanity/LoginUserFlow.ts",
+    "../test/specs/Sanity/HomePageFlow.ts",
   //  "../test/specs/Sanity/ProfileFlow.ts",
   // "../test/specs/Sanity/HelpPageFlow.ts",
   // "../test/specs/Sanity/LogOutFlow.ts",
@@ -23,9 +23,9 @@ config.capabilities = [
      browserName: "chrome",
      browserVersion: "latest",
      acceptInsecureCerts: true,
-    'goog:chromeOptions': {
-          args: ["--headless", "user-agent=...","--disable-gpu","--window-size=1440,735"]
-    }
+    // 'goog:chromeOptions': {
+    //       args: ["--headless", "user-agent=...","--disable-gpu","--window-size=1440,735"]
+    // }
    },
    
   //    {

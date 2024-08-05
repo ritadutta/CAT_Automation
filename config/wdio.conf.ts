@@ -166,21 +166,27 @@ export const config: Options.Testrunner = {
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
     "spec",
-    [
-      "allure",
-      {
-        outputDir: "allure-results",
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: false,
-        disableMochaHooks:true,
-        addConsoleLogs: true,
-        reportedEnvironmentVars: {
-         // Environment: ENV,
-          Platform: process.platform,
-          //URL: envurl,
-        },
-      },
-    ]
+    // [
+    //   "allure",
+    //   {
+    //     outputDir: "allure-results",
+    //     disableWebdriverStepsReporting: true,
+    //     disableWebdriverScreenshotsReporting: false,
+    //     disableMochaHooks:true,
+    //     addConsoleLogs: true,
+    //     reportedEnvironmentVars: {
+    //      // Environment: ENV,
+    //       Platform: process.platform,
+    //       //URL: envurl,
+    //     },
+    //   },
+    // ]
+    ['junit', {
+      outputDir: 'junit-reports',
+      outputFileFormat: function(options) { // optional
+          return `results-${options.cid}.xml`
+      }
+  }]
   ],
 
   // Options to be passed to Mocha.

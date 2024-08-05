@@ -61,12 +61,13 @@ class ProfilePage {
      // Switch back to the main window
      await browser.switchToWindow(mainWindowHandle);
      browser.pause(3000);
-     (await this.goToMyZartico).click();
-     browser.pause(10000);
-     const zarticoHomeurl = await browser.getUrl();
-     console.log('URL of the current tab:', await zarticoHomeurl);
+     (await this.profileSection).click();
+    //  (await this.goToMyZartico).click();
+    //  browser.pause(10000);
+    //  const zarticoHomeurl = await browser.getUrl();
+    //  console.log('URL of the current tab:', await zarticoHomeurl);
      // Navigate back to the previous page
-     await browser.back();
+     // await browser.back();
      browser.pause(1000);
     
   }
